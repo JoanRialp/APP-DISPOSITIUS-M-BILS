@@ -44,6 +44,7 @@ public class Events extends AppCompatActivity implements UserViewActions {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Events.this, Registrate.class);
+                intent.putExtra("Contador",contador);
                 startActivity(intent);
             }
         });
@@ -52,7 +53,7 @@ public class Events extends AppCompatActivity implements UserViewActions {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Events.this, MainActivity.class);
-                intent.putExtra("Contador", contador);
+                intent.putExtra("Contador", contador+1);
                 startActivity(intent);
             }
         });

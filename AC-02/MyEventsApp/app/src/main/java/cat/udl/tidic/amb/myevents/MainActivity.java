@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         assert extras != null;
         try
         {
-            contador = 1 + extras.getInt("Contador");;
+            contador = extras.getInt("Contador");;
             updateContador(contador);
         }
         catch(Exception e)
